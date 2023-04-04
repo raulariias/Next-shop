@@ -12,6 +12,7 @@ const ProductList = () => {
 			<div className={styles["ProductList"]}>
 				{products.map(product => {
 					if (product.images.length > 0
+						&& product.id < 50
 						&& product.images[0] !== '' 
 						&& product.images[0] !== 'asdfa'
 						&& product.images[0] !== 'asdfaf'
